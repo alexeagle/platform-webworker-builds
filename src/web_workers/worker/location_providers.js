@@ -13,7 +13,7 @@ import { WebWorkerPlatformLocation } from './platform_location';
  * {@link ROUTER_PROVIDERS} and after them.
  * @experimental
  */
-export var /** @type {?} */ WORKER_APP_LOCATION_PROVIDERS = [
+export const /** @type {?} */ WORKER_APP_LOCATION_PROVIDERS = [
     { provide: PlatformLocation, useClass: WebWorkerPlatformLocation }, {
         provide: APP_INITIALIZER,
         useFactory: appInitFnFactory,
@@ -27,6 +27,6 @@ export var /** @type {?} */ WORKER_APP_LOCATION_PROVIDERS = [
  * @return {?}
  */
 function appInitFnFactory(platformLocation, zone) {
-    return function () { return zone.runGuarded(function () { return platformLocation.init(); }); };
+    return () => zone.runGuarded(() => platformLocation.init());
 }
 //# sourceMappingURL=location_providers.js.map
