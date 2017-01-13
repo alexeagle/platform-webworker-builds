@@ -17,6 +17,7 @@ export { Subject } from 'rxjs/Subject';
  * title gets clicked:
  *
  * ```
+ * \@Component({
  *   selector: 'zippy',
  *   template: `
  *   <div class="zippy">
@@ -52,6 +53,7 @@ export { Subject } from 'rxjs/Subject';
  * https://github.com/jhusain/observable-spec
  *
  * Once a reference implementation of the spec is available, switch to it.
+ * \@stable
  */
 export class EventEmitter extends Subject {
     /**

@@ -11,6 +11,7 @@
  * given channel to one MessageBusSink are received on the same channel
  * by the corresponding MessageBusSource.
  *
+ * \@experimental WebWorker support in Angular is currenlty experimental.
  * @abstract
  */
 export class MessageBus {

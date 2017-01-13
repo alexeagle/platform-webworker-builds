@@ -53,6 +53,7 @@ export function setupWebWorker() {
 /**
  * The ng module for the worker app side.
  *
+ * \@experimental
  */
 export class WorkerAppModule {
 }

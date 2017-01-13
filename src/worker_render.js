@@ -21,9 +21,11 @@ import { MessageBasedRenderer } from './web_workers/ui/renderer';
  * Wrapper class that exposes the Worker
  * and underlying {\@link MessageBus} for lower level message passing.
  *
+ * \@experimental WebWorker support is currently experimental.
  */
 export class WebWorkerInstance {
     /**
+     * \@internal
      * @param {?} worker
      * @param {?} bus
      * @return {?}

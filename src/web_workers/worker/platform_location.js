@@ -49,6 +49,7 @@ export class WebWorkerPlatformLocation extends PlatformLocation {
         });
     }
     /**
+     * \@internal *
      * @return {?}
      */
     init() {

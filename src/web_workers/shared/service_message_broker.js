@@ -10,6 +10,7 @@ import { isPresent } from '../../facade/lang';
 import { MessageBus } from '../shared/message_bus';
 import { Serializer } from '../shared/serializer';
 /**
+ * \@experimental WebWorker support in Angular is currently experimental.
  * @abstract
  */
 export class ServiceMessageBrokerFactory {
@@ -58,7 +59,10 @@ function ServiceMessageBrokerFactory__tsickle_Closure_declarations() {
      * @type {?}
      */
     ServiceMessageBrokerFactory_.ctorParameters;
-    /** @type {?} */
+    /**
+     * \@internal
+     * @type {?}
+     */
     ServiceMessageBrokerFactory_.prototype._serializer;
     /** @type {?} */
     ServiceMessageBrokerFactory_.prototype._messageBus;
@@ -69,6 +73,7 @@ function ServiceMessageBrokerFactory__tsickle_Closure_declarations() {
  * the UIMessageBroker deserializes its arguments and calls the registered method.
  * If that method returns a promise, the UIMessageBroker returns the result to the worker.
  *
+ * \@experimental WebWorker support in Angular is currently experimental.
  * @abstract
  */
 export class ServiceMessageBroker {
@@ -151,6 +156,9 @@ function ServiceMessageBroker__tsickle_Closure_declarations() {
     /** @type {?} */
     ServiceMessageBroker_.prototype.channel;
 }
+/**
+ * \@experimental WebWorker support in Angular is currently experimental.
+ */
 export class ReceivedMessage {
     /**
      * @param {?} data

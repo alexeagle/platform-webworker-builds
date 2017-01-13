@@ -10,6 +10,7 @@ import { isPresent, print, stringify } from '../../facade/lang';
 import { MessageBus } from './message_bus';
 import { Serializer } from './serializer';
 /**
+ * \@experimental WebWorker support in Angular is experimental.
  * @abstract
  */
 export class ClientMessageBrokerFactory {
@@ -59,12 +60,16 @@ function ClientMessageBrokerFactory__tsickle_Closure_declarations() {
      * @type {?}
      */
     ClientMessageBrokerFactory_.ctorParameters;
-    /** @type {?} */
+    /**
+     * \@internal
+     * @type {?}
+     */
     ClientMessageBrokerFactory_.prototype._serializer;
     /** @type {?} */
     ClientMessageBrokerFactory_.prototype._messageBus;
 }
 /**
+ * \@experimental WebWorker support in Angular is experimental.
  * @abstract
  */
 export class ClientMessageBroker {
@@ -179,7 +184,10 @@ function ClientMessageBroker__tsickle_Closure_declarations() {
     ClientMessageBroker_.prototype._pending;
     /** @type {?} */
     ClientMessageBroker_.prototype._sink;
-    /** @type {?} */
+    /**
+     * \@internal
+     * @type {?}
+     */
     ClientMessageBroker_.prototype._serializer;
     /** @type {?} */
     ClientMessageBroker_.prototype.channel;
@@ -195,6 +203,7 @@ class MessageData {
     }
     /**
      * Returns the value if present, otherwise returns null
+     * \@internal
      * @param {?} data
      * @param {?} key
      * @return {?}
@@ -211,6 +220,9 @@ function MessageData_tsickle_Closure_declarations() {
     /** @type {?} */
     MessageData.prototype.id;
 }
+/**
+ * \@experimental WebWorker support in Angular is experimental.
+ */
 export class FnArg {
     /**
      * @param {?} value
@@ -227,6 +239,9 @@ function FnArg_tsickle_Closure_declarations() {
     /** @type {?} */
     FnArg.prototype.type;
 }
+/**
+ * \@experimental WebWorker support in Angular is experimental.
+ */
 export class UiArguments {
     /**
      * @param {?} method

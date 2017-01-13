@@ -18,6 +18,7 @@ export { platformWorkerUi } from './worker_render';
 /**
  * Bootstraps the worker ui.
  *
+ * \@experimental
  * @param {?} workerScriptUri
  * @param {?=} customProviders
  * @return {?}

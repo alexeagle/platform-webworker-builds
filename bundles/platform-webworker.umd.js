@@ -79,6 +79,7 @@
      * given channel to one MessageBusSink are received on the same channel
      * by the corresponding MessageBusSource.
      *
+     * \@experimental WebWorker support in Angular is currenlty experimental.
      * @abstract
      */
     var MessageBus = (function () {
@@ -357,6 +358,7 @@
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
     /**
+     * \@experimental WebWorker support in Angular is experimental.
      * @abstract
      */
     var ClientMessageBrokerFactory = (function () {
@@ -405,6 +407,7 @@
         return ClientMessageBrokerFactory_;
     }(ClientMessageBrokerFactory));
     /**
+     * \@experimental WebWorker support in Angular is experimental.
      * @abstract
      */
     var ClientMessageBroker = (function () {
@@ -532,6 +535,7 @@
         }
         /**
          * Returns the value if present, otherwise returns null
+         * \@internal
          * @param {?} data
          * @param {?} key
          * @return {?}
@@ -541,6 +545,9 @@
         };
         return MessageData;
     }());
+    /**
+     * \@experimental WebWorker support in Angular is experimental.
+     */
     var FnArg = (function () {
         /**
          * @param {?} value
@@ -552,6 +559,9 @@
         }
         return FnArg;
     }());
+    /**
+     * \@experimental WebWorker support in Angular is experimental.
+     */
     var UiArguments = (function () {
         /**
          * @param {?} method
@@ -585,6 +595,7 @@
      * title gets clicked:
      *
      * ```
+     * \@Component({
      *   selector: 'zippy',
      *   template: `
      *   <div class="zippy">
@@ -620,6 +631,7 @@
      * https://github.com/jhusain/observable-spec
      *
      * Once a reference implementation of the spec is available, switch to it.
+     * \@stable
      */
     var EventEmitter = (function (_super) {
         __extends$1(EventEmitter, _super);
@@ -903,6 +915,7 @@
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
     /**
+     * \@experimental WebWorker support in Angular is currently experimental.
      * @abstract
      */
     var ServiceMessageBrokerFactory = (function () {
@@ -955,6 +968,7 @@
      * the UIMessageBroker deserializes its arguments and calls the registered method.
      * If that method returns a promise, the UIMessageBroker returns the result to the worker.
      *
+     * \@experimental WebWorker support in Angular is currently experimental.
      * @abstract
      */
     var ServiceMessageBroker = (function () {
@@ -1035,6 +1049,9 @@
         };
         return ServiceMessageBroker_;
     }(ServiceMessageBroker));
+    /**
+     * \@experimental WebWorker support in Angular is currently experimental.
+     */
     var ReceivedMessage = (function () {
         /**
          * @param {?} data
@@ -1604,11 +1621,13 @@
      * Wrapper class that exposes the Worker
      * and underlying {\@link MessageBus} for lower level message passing.
      *
+     * \@experimental WebWorker support is currently experimental.
      */
     var WebWorkerInstance = (function () {
         function WebWorkerInstance() {
         }
         /**
+         * \@internal
          * @param {?} worker
          * @param {?} bus
          * @return {?}
@@ -1898,6 +1917,7 @@
             });
         }
         /**
+         * \@internal *
          * @return {?}
          */
         WebWorkerPlatformLocation.prototype.init = function () {
@@ -3441,6 +3461,7 @@
     /**
      * The ng module for the worker app side.
      *
+     * \@experimental
      */
     var WorkerAppModule = (function () {
         function WorkerAppModule() {
@@ -3468,6 +3489,7 @@
     /**
      * Bootstraps the worker ui.
      *
+     * \@experimental
      * @param {?} workerScriptUri
      * @param {?=} customProviders
      * @return {?}
